@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="add_to_list"
+        android:title="@string/input_method_settings" />
+    <Preference
+        android:key="enable_airinput"
+        android:title="@string/change_to_airinput" />
+</PreferenceScreen>

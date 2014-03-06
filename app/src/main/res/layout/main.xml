@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+    <!--   -->
+
+    <ViewFlipper
+            android:id="@+id/vfContent"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <!-- Loading 0 -->
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Loading...."
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Start(Idle) 1 -->
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="AirInput"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btnStart"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Start">
+            </Button>
+        </LinearLayout>
+
+
+        <!-- Running 2 -->
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Open address:"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="http://192.168.40.73:8888?p=abcdef"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="Stop"/>
+        </LinearLayout>
+    </ViewFlipper>
+
+</LinearLayout>

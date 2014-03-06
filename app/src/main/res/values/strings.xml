@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">WhatsInput</string>
+    <string name="im_name">WhatsInput</string>
+    <string name="restart_server">Restart Server</string>
+    <string name="change_inputmethod">Change InputMethod</string>
+
+    <string-array name="popup_list">
+        <item>Restart Server</item>
+        <item>Change InputMethod</item>
+    </string-array>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="change_to_airinput">Change to WhatsInput</string>
+    <string name="input_method_settings">Input method settings</string>
+    <string name="restart_finished">Restart finished.</string>
+    <string name="restarting">Restarting...</string>
+    <string name="only_work_in_wifi_">Only work in WiFi...</string>
+</resources>
