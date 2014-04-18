@@ -22,7 +22,9 @@ WhatsInput，是一款输入法，通过 WIFI，使你的PC键盘向手机输入
 
 1.  开始编辑
 
+```
 {"text":"sssss","type":"InputStart"}
+```
 
 type  消息类型 InputStart
 text 开始编辑时的内容
